@@ -1,0 +1,41 @@
+{# Code is writen in the jinja templating language: http://jinja.pocoo.org/docs/2.10/ #}
+{% extends "page.html" %}
+{% block contents %}
+<h1>Own your accounting data</h1>
+
+<p>
+    We believe that accounting data is one of the most valuable data of a business.
+</p>
+<p>
+    Hence, it seems crucial to us that:
+<ol style="width: 600px;">
+    <li>Entrepreneurs should own their accounting data and not depend on a third-party cloud to access them
+    </li>
+    <li style="margin-top: 1rem;">The accounting data should be written using a simple, documented and open
+        human-readable format</li>
+</ol>
+
+<p>
+    This is what pome offers.
+</p>
+<p>
+    Our ambition is to provide the framework for an ecosystem that will let businesses get the most out of their
+    accounting data.
+</p>
+
+<div style="text-align: left; width: 100%">
+    Find us on GitHub:
+    <h2 style="text-align: center;"><a href="https://github.com/pome-gr/pome">https://github.com/pome-gr/pome</a></h2>
+</div>
+
+<h2>Blog posts</h2>
+<ul class="post-list">
+    {% for (n, p) in posts %}
+    <li>
+        <span class="post-meta">{{ n.date }}</span>
+        <a class="post-link" href="{{ n.url }}">{{ n.title }}</a>
+        <div class="post-headline">{{ n.headline }}</div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

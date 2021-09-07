@@ -1,0 +1,10 @@
+future==0.18.2
+importlib-metadata==4.6.4
+Jinja2==3.0.1
+Markdown==3.3.4
+MarkupSafe==2.0.1
+pyparsing==2.4.7
+python-frontmatter==1.0.0
+PyYAML==5.1
+typing-extensions==3.10.0.0
+zipp==3.5.0
